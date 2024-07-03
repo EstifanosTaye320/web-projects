@@ -6,6 +6,8 @@ fetch("http://jsonplaceholder.typicode.com/posts")
     json.forEach(dd => {
         mydiv.innerHTML += createTile(dd);
     });
+}).catch(error => {
+    console.log("this is the error" + " " + error)
 });
 
 function createTile(data) {
